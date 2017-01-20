@@ -1,0 +1,26 @@
+<controls>
+    <SliderInt_threshold>
+        <name>threshold</name>
+        <value>76</value>
+    </SliderInt_threshold>
+    <Toggle_findHoles>
+        <name>findHoles</name>
+        <value>0</value>
+    </Toggle_findHoles>
+    <Toggle_useApproximation>
+        <name>useApproximation</name>
+        <value>1</value>
+    </Toggle_useApproximation>
+    <SliderFloat_minBlobSize>
+        <name>minBlobSize</name>
+        <value>0.038461540</value>
+    </SliderFloat_minBlobSize>
+    <SliderFloat_maxBlobSize>
+        <name>maxBlobSize</name>
+        <value>0.965811968</value>
+    </SliderFloat_maxBlobSize>
+    <SliderInt_maxNumBlobs>
+        <name>maxNumBlobs</name>
+        <value>10</value>
+    </SliderInt_maxNumBlobs>
+</controls>
