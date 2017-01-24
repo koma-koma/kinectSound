@@ -1,7 +1,7 @@
 <controls>
     <SliderInt_threshold>
         <name>threshold</name>
-        <value>76</value>
+        <value>51</value>
     </SliderInt_threshold>
     <Toggle_findHoles>
         <name>findHoles</name>
@@ -13,7 +13,7 @@
     </Toggle_useApproximation>
     <SliderFloat_minBlobSize>
         <name>minBlobSize</name>
-        <value>0.038461540</value>
+        <value>0.042735044</value>
     </SliderFloat_minBlobSize>
     <SliderFloat_maxBlobSize>
         <name>maxBlobSize</name>

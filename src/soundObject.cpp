@@ -29,6 +29,9 @@ void soundObject::update() {
     }
     move = (pos_old.x - pos.x)*(pos_old.x - pos.x)+(pos_old.y - pos.y)*(pos_old.y - pos.y);
     move = sqrt(move);
+    if (move > 1) {
+        move = 1;
+    }
     pos_old = pos;
 }
 
@@ -79,12 +82,17 @@ void soundObject::setColor(ofColor _color) {
 void soundObject::setVelocity(int _depth, int _ground) {
     depth = _depth;
     if (depth != 0) {
-        vel = ofMap(depth, _ground, 0, 31, 127);
+        vel = ofMap(depth, _ground, 0, 31, 96);
     }
 }
 void soundObject::setSize(int _size) {
     size = _size;
-    oct = ofMap(size, 50, 400, 10, 2);
+    oct = ofMap(size, 50, 200, 10, 2);
+    if (oct < 3) {
+        oct = 3;
+    } else if (oct > 7) {
+        oct = 7;
+    }
 }
 
 ofPoint soundObject::getPos() {

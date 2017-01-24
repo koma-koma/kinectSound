@@ -18,7 +18,7 @@ void ofApp::setup(){
     
     // setup OSC
     //sender.setup("192.168.3.96", 8000);
-    sender.setup("localhost", 8000);
+    sender.setup("192.168.3.96", 8000);
     receiver.setup(9000);
     
     //使用する画像の領域を確保
